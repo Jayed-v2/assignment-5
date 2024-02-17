@@ -10,14 +10,215 @@
 
 </head>
 <body>
-    <header>
-
+    <header class="container mx-auto">
+            <nav>
+                <div class="navbar bg-base-100">
+                    <div class="navbar-start">
+                      <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                          <li><a>Item 1</a></li>
+                          <li>
+                            <a>Parent</a>
+                            <ul class="p-2">
+                              <li><a>Submenu 1</a></li>
+                              <li><a>Submenu 2</a></li>
+                            </ul>
+                          </li>
+                          <li><a>Item 3</a></li>
+                        </ul>
+                      </div>
+                      <a class="btn btn-ghost text-2xl font-extrabold">P-Ticket</a>
+                    </div>
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li><a class="font-medium">Home</a></li>
+                        <li><a class="font-medium">About</a></li>
+                        <li><a class="font-medium">Destination</a></li>
+                        <li><a class="font-medium">search</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end">
+                      <a class="btn text-[#1DD100] bg-[#1DD10066]">Bus <img src="images/bus-icon.png" alt=""></a>
+                    </div>
+                  </div>
+            </nav>
     </header>
-    <main>
+    <main class="container mx-auto">
+         <section>
+            <div class="hero h-[550px] mb-20 rounded-2xl" style="background-image: url(images/banner.png);">
+                <div class="hero-content text-center text-neutral-content">
+                  <div class="max-w-md">
+                    <h1 class="mb-5 text-4xl font-bold">End-to-End Travel with <br>
+                         <span class="text-[#1DD100]">P Paribahan</span></h1>
+                    <p class="mb-5">Yes, you can run unit tests and view the results directly within the app. The 
+                        integrated testing features allow for a streamlined . </p>
+                    <button class="p-3 rounded-lg bg-[#1DD100] text-black">Buy Tickets</button>
+                  </div>
+                </div>
+              </div>
+         </section>
+         <section class="space-y-16">
+            <h2 class="text-3xl font-bold text-center">Best offers for you</h2>
+            <div class="flex flex-col space-y-10 justify-around items-center lg:flex-row ">
+                <div  class="flex items-center justify-around bg-[#FFBF0F] h-56 w-[573px] rounded-lg">
+                   <div>
+                       <h1 class="text-2xl font-bold">15% OFF</h1>
+                       <p class="font-bold">on your next purchase</p>
+                       <p class="text-[#030712CC]">use by January 2024</p>
+                   </div>
+                   <div>
+                       <h1 class="text-2xl font-bold">NEW15</h1>
+                       <p>Cupon Code</p>
+                   </div>
+                </div>
+                <div class="flex justify-around items-center bg-[#F78C9C] h-56 w-[573px] rounded-lg">
+                    <div>
+                      <h1 class="text-2xl font-bold">20% OFF</h1>
+                      <p class="font-bold">on your next purchase</p>
+                      <p text-[#030712CC]>use by January 2024</p>
+                    </div>
+                    <div>
+                      <h1 class="text-2xl font-bold">NEW15</h1>
+                      <p>Cupon Code</p>
+                    </div>
+                </div>
+               
+           </div>
+           <div class="flex justify-center">
+            <button class="btn text-[#1DD100] ">See All Offers</button>
+        </div>
+         </section>
+         <section class="mt-20 bg-[#F7F8F8] rounded-t-3xl">
+                <div class="text-center space-y-5">
+                    <h1 class="text-2xl font-bold">P.H Paribahan</h1>
+                    <p>Yes, you can run unit tests and view the results directly within the app. The integrated <br> testing features allow for a streamlined .</p>
+                </div>
 
+               <div class="flex justify-around ">
+                   <div>
+                       <div class="flex space-x-72">
+                            <div class="flex">
+                                <img src="images/bus-logo.png">
+                                <p class="text-2xl font-bold">Greenline Paribahan <br>
+                                <span class="text-sm font-normal">Coach-009-WEB ! AC_Business</span></p>
+                            </div>
+                            <div class="flex justify-center items-center">
+                                <img src="images/seat-green.png">
+                                <p class="text-[#1DD100]">40</p>
+                                <p class="text-[#1DD100]">Seats left</p>
+                            </div>
+                       </div>
+                       <div class="bg-[#EEEEEE] rounded-xl p-4 space-y-3">
+                        <div class="flex space-x-96">
+                            <p>Route</p>
+                            <p>Dhaka-Sylhet</p>
+                           
+                        </div>
+                        <hr>
+                        <div class="flex space-x-80">
+                            <p>Departure Time</p>
+                            <p>9:PM</p>
+                           
+                        </div>
+                        <hr>
+                        <div class="space-x-8">
+                            <button class="bg-white p-1 rounded-lg">Boarding Point - Laxmipur</button> 
+                            <button class="bg-white p-1 rounded-lg">Dropping Point - Bogura</button> 
+                            <button class="bg-white p-1 rounded-lg">Est. Time - 11 Hour</button>
+                        </div>
+                      </div>
+                   </div>
+                   <div> <div class="text-center ">
+                    <img src="images/fare.png" >
+                    <h3 class="text-3xl font-bold">550 Taka</h3>
+                    <p class="text-xl">Per Seat</p>
+                </div></div>
+               </div>
+         </section>
+         <section>
+                
+                     
+                        <p>Select Your Seats1</p>
+                        <hr>
+                         <div class="flex justify-between">
+                            <div class="flex items-center">
+                                <img src="images/seat-gray.png">
+                                <p>Available</p>
+                            </div>
+                            <div class="flex items-center">
+                                <img src="images/seat-green.png">
+                                <p>Selected</p>
+                            </div>
+                         </div>
+                         <hr>
+            <div class="flex space-x-20">
+                <div class="space-y-4">
+                    <div class="space-x-4"><kbd class="kbd px-4">A1</kbd> <kbd class="kbd px-4">A2</kbd></div>
+                    <div class="space-x-4"><kbd class="kbd px-4">B1</kbd> <kbd class="kbd px-4">B2</kbd></div>
+                    <div class="space-x-4"><kbd class="kbd px-4">C1</kbd> <kbd class="kbd px-4">C2</kbd></div>
+                    <div class="space-x-4"><kbd class="kbd px-4">D1</kbd> <kbd class="kbd px-4">D2</kbd></div>
+                    <div class="space-x-4"><kbd class="kbd px-4">E1</kbd> <kbd class="kbd px-4">E2</kbd></div>
+                    <div class="space-x-4"><kbd class="kbd px-4">F1</kbd> <kbd class="kbd px-4">F2</kbd></div>
+                    <div class="space-x-4"><kbd class="kbd px-4">G1</kbd> <kbd class="kbd px-4">G2</kbd></div>
+                    <div class="space-x-4"><kbd class="kbd px-4">H1</kbd> <kbd class="kbd px-4">H2</kbd></div>
+                    <div class="space-x-4"><kbd class="kbd px-4">I1</kbd> <kbd class="kbd px-4">I2</kbd></div>
+                    <div class="space-x-4"><kbd class="kbd px-4">J1</kbd> <kbd class="kbd px-4">J2</kbd></div>
+                </div>
+                <div class="space-y-4">
+                     <div class="space-x-4"><kbd class="kbd px-4">A3</kbd> <kbd class="kbd px-4">A4</kbd></div>
+                     <div class="space-x-4"><kbd class="kbd px-4">B3</kbd> <kbd class="kbd px-4">B4</kbd></div>
+                     <div class="space-x-4"><kbd class="kbd px-4">C3</kbd> <kbd class="kbd px-4">C4</kbd></div>
+                     <div class="space-x-4"><kbd class="kbd px-4">D3</kbd> <kbd class="kbd px-4">D4</kbd></div>
+                     <div class="space-x-4"><kbd class="kbd px-4">E3</kbd> <kbd class="kbd px-4">E4</kbd></div>
+                     <div class="space-x-4"><kbd class="kbd px-4">F3</kbd> <kbd class="kbd px-4">F4</kbd></div>
+                     <div class="space-x-4"><kbd class="kbd px-4">G3</kbd> <kbd class="kbd px-4">G4</kbd></div>
+                     <div class="space-x-4"><kbd class="kbd px-4">H3</kbd> <kbd class="kbd px-4">H4</kbd></div>
+                     <div class="space-x-4"><kbd class="kbd px-4">I3</kbd> <kbd class="kbd px-4">I4</kbd></div>
+                     <div class="space-x-4"><kbd class="kbd px-4">J3</kbd> <kbd class="kbd px-4">J4</kbd></div>
+                </div>
+            </div>
+                     <div>
+                         <p>Select Your Seat</p>
+                         <hr>
+                         <div class="flex justify-around">
+                            <div>Seat</div>
+                            <div>Class</div>
+                            <div>Price</div>
+                         </div>
+                         <div class="flex justify-around">
+                            <div>Total Price</div>
+                            <div>BDT</div>
+                         </div>
+                         <div class="flex justify-center">
+                            <input type="text" placeholder="Have any copupon?">
+                            <button class="bg-[#1DD100] text-white px-2 rounded-lg">Apply</button>
+                         </div>
+                         <div class="flex justify-around">
+                            <div>Grand Total</div>
+                            <div>BDT</div>
+                         </div>
+                     </div>
+         </section>
     </main>
-    <footer>
-
-    </footer>
+    
+    <footer class="footer p-20 bg-black text-base-content text-white">
+        <nav>
+          <h2 class="text-3xl font-bold">P-Ticket</h2>
+          <p>P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+        </nav> 
+        <nav>
+           <div>
+               <p>Download our app</p>
+               <div class="flex border-white ">
+                <img src="images/playstore.png">
+                <p>GET IT ON <br> <span class="text-xl">Google Play</span></p>
+               </div>
+           </div>
+        </nav> 
+        
+      </footer>
 </body>
 </html>
